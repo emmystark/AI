@@ -114,7 +114,7 @@ async def initialize_rag():
             max_token_size=int(os.getenv("MAX_EMBED_TOKENS", "8192")),
             func=lambda texts: ollama_embed(
                 texts,
-                embed_model=os.getenv("EMBEDDING_MODEL", "bge-m3:latest"),
+                embed_model=os.getenv("EMBEDDING_MODEL", "nomic-embed-text"),
                 host=os.getenv("EMBEDDING_BINDING_HOST", "http://localhost:11434"),
             ),
         ),

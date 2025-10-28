@@ -58,7 +58,7 @@ LLM_BINDING_API_KEY=your_api_key
 
 EMBEDDING_BINDING=ollama
 EMBEDDING_BINDING_HOST=http://localhost:11434
-EMBEDDING_MODEL=bge-m3:latest
+EMBEDDING_MODEL=nomic-embed-text
 EMBEDDING_DIM=1024
 # EMBEDDING_BINDING_API_KEY=your_api_key
 ```
@@ -75,7 +75,7 @@ OLLAMA_LLM_NUM_CTX=8192
 
 EMBEDDING_BINDING=ollama
 EMBEDDING_BINDING_HOST=http://localhost:11434
-EMBEDDING_MODEL=bge-m3:latest
+EMBEDDING_MODEL=nomic-embed-text
 EMBEDDING_DIM=1024
 # EMBEDDING_BINDING_API_KEY=your_api_key
 ```
@@ -487,7 +487,7 @@ LLM_BINDING_HOST=https://api.openai.com/v1
 LLM_BINDING_API_KEY=your-api-key
 
 ### Embedding Configuration (Use valid host. For local services installed with docker, you can use host.docker.internal)
-EMBEDDING_MODEL=bge-m3:latest
+EMBEDDING_MODEL=nomic-embed-text
 EMBEDDING_DIM=1024
 EMBEDDING_BINDING=ollama
 EMBEDDING_BINDING_HOST=http://localhost:11434
@@ -507,7 +507,7 @@ EMBEDDING_BINDING_HOST=http://localhost:11434
 Ollama 是 llm 和嵌入的默认后端，因此默认情况下您可以不带参数运行 lightrag-server，将使用默认值。确保已安装 ollama 并且正在运行，且默认模型已安装在 ollama 上。
 
 ```bash
-# 使用 ollama 运行 lightrag，llm 使用 mistral-nemo:latest，嵌入使用 bge-m3:latest
+# 使用 ollama 运行 lightrag，llm 使用 mistral-nemo:latest，嵌入使用 nomic-embed-text
 lightrag-server
 
 # 使用认证密钥
@@ -517,7 +517,7 @@ lightrag-server --key my-key
 #### 使用 lollms 默认本地服务器作为 llm 和嵌入后端运行 Lightrag 服务器
 
 ```bash
-# 使用 lollms 运行 lightrag，llm 使用 mistral-nemo:latest，嵌入使用 bge-m3:latest
+# 使用 lollms 运行 lightrag，llm 使用 mistral-nemo:latest，嵌入使用 nomic-embed-text
 # 在 .env 或 config.ini 中配置 LLM_BINDING=lollms 和 EMBEDDING_BINDING=lollms
 lightrag-server
 

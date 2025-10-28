@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 
 load_dotenv(dotenv_path=".env", override=False)
 
-WORKING_DIR = "./dickens"
+WORKING_DIR = "./dickens_ollama_demo" 
 
 
 def configure_logging():
@@ -86,7 +86,7 @@ async def initialize_rag():
     rag = LightRAG(
         working_dir=WORKING_DIR,
         llm_model_func=ollama_model_complete,
-        llm_model_name=os.getenv("LLM_MODEL", "qwen2.5-coder:7b"),
+        llm_model_name=os.getenv("LLM_MODEL", "deepseek-r1:1.5b"),
         summary_max_tokens=8192,
         llm_model_kwargs={
             "host": os.getenv("LLM_BINDING_HOST", "http://localhost:11434"),
@@ -98,7 +98,7 @@ async def initialize_rag():
             max_token_size=int(os.getenv("MAX_EMBED_TOKENS", "8192")),
             func=lambda texts: ollama_embed(
                 texts,
-                embed_model=os.getenv("EMBEDDING_MODEL", "bge-m3:latest"),
+                embed_model=os.getenv("EMBEDDING_MODEL", "nomic-embed-text"),
                 host=os.getenv("EMBEDDING_BINDING_HOST", "http://localhost:11434"),
             ),
         ),

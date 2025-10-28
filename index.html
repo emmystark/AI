@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexusBlocks — Web3 Development Partner</title>
+  <meta name="description" content="Multi-chain dev partner for secure smart contracts, production-grade dApps, and clean UI/UX."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root{
+      --nb-purple:#6F1EDB; --nb-purple-dark:#2A0A4A; --nb-accent:#A977FF;
+      --nb-bg:#0E0A14; --nb-text:#D9D9E3; --nb-white:#FFFFFF; --nb-success:#77E0A0;
+    }
+    .nb-gradient{ background: radial-gradient(80% 60% at 50% 20%, var(--nb-purple) 0%, var(--nb-purple-dark) 50%, var(--nb-bg) 100%);}
+  </style>
+</head>
+<body class="bg-[color:var(--nb-bg)] text-[color:var(--nb-text)] antialiased" style="font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-black/30">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="NexusBlocks" class="h-8 w-auto">
+        <span class="font-extrabold tracking-wide text-white">NexusBlocks</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-white">Services</a>
+        <a href="#process" class="hover:text-white">Process</a>
+        <a href="#work" class="hover:text-white">Work</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+        <a href="#contact" class="px-4 py-2 rounded-md bg-[color:var(--nb-purple)] text-white font-semibold">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="nb-gradient">
+    <div class="max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+        Build, ship, and scale Web3—safely.
+      </h1>
+      <p class="mt-5 text-lg md:text-xl text-[color:var(--nb-text)]">
+        Multi-chain development, security-first engineering, and clean UI/UX—delivered on time.
+      </p>
+      <div class="mt-8 flex gap-4 justify-center">
+        <a href="#contact" class="px-6 py-3 rounded-md bg-[color:var(--nb-purple)] text-white font-semibold">Get a Quote</a>
+        <a href="#work" class="px-6 py-3 rounded-md border border-white/20 hover:border-white/50">See Our Work</a>
+      </div>
+      <div class="mt-10 text-sm opacity-80">Worked with founders backed by … (add logos)</div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-white">Services</h2>
+    <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- card -->
+      <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+        <h3 class="font-bold text-white">Smart Contracts</h3>
+        <p class="mt-2 text-sm">ERC-20/721/1155, vesting, staking, launches, upgrade-safe patterns.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+        <h3 class="font-bold text-white">dApps</h3>
+        <p class="mt-2 text-sm">DEX, launchpads, dashboards, wallets, payouts. EVM + non-EVM.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+        <h3 class="font-bold text-white">Audit & Hardening</h3>
+        <p class="mt-2 text-sm">Threat modeling, unit/integration tests, findings & fixes.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+        <h3 class="font-bold text-white">Token & Tokenomics</h3>
+        <p class="mt-2 text-sm">Utilities, emissions, vesting design, docs for investors & listings.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+        <h3 class="font-bold text-white">UI/UX & Frontend</h3>
+        <p class="mt-2 text-sm">Next.js, mobile-first, performance budgets, accessibility.</p>
+      </div>
+      <div class="p-6 rounded-xl bg-white/5 border border-white/10">
+        <h3 class="font-bold text-white">Maintenance & SLAs</h3>
+        <p class="mt-2 text-sm">Monitoring, upgrades, on-call. Cash + token options.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-white">How we work</h2>
+    <ol class="mt-6 grid md:grid-cols-4 gap-6 text-sm">
+      <li class="p-5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-white">1) Scope</span><br/>30–45 min call, requirements & risks.</li>
+      <li class="p-5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-white">2) Arch & Quote</span><br/>48–72h plan, milestones, price.</li>
+      <li class="p-5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-white">3) Build</span><br/>Weekly demos, testnets, security checks.</li>
+      <li class="p-5 rounded-xl bg-white/5 border border-white/10"><span class="font-bold text-white">4) Launch</span><br/>Handover, monitoring, SLA.</li>
+    </ol>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-3xl mx-auto px-4 py-20">
+    <h2 class="text-2xl md:text-3xl font-extrabold text-white">Get a Quote</h2>
+    <form class="mt-6 grid gap-4" action="https://formspree.io/f/your-id" method="POST">
+      <input class="p-3 rounded-md bg-white/5 border border-white/10" name="name" placeholder="Your name" required>
+      <input class="p-3 rounded-md bg-white/5 border border-white/10" type="email" name="email" placeholder="Email" required>
+      <input class="p-3 rounded-md bg-white/5 border border-white/10" name="project" placeholder="Project / Company">
+      <input class="p-3 rounded-md bg-white/5 border border-white/10" name="chains" placeholder="Chain(s)">
+      <select class="p-3 rounded-md bg-white/5 border border-white/10" name="budget">
+        <option value="">Budget range</option>
+        <option>&lt;$10k</option><option>$10–30k</option><option>$30–60k</option><option>$60k+</option>
+      </select>
+      <input class="p-3 rounded-md bg-white/5 border border-white/10" name="timeline" placeholder="Timeline (weeks)">
+      <textarea class="p-3 rounded-md bg-white/5 border border-white/10" name="spec" rows="4" placeholder="Brief spec or Notion link"></textarea>
+      <button class="px-6 py-3 rounded-md bg-[color:var(--nb-purple)] text-white font-semibold">Send</button>
+    </form>
+    <p class="mt-4 text-xs opacity-70">Or email: hello@nexusblocks.xyz</p>
+  </section>
+
+  <footer class="py-10 border-t border-white/10 text-center text-xs opacity-70">
+    ©️ <span id="y"></span> NexusBlocks. All rights reserved.
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

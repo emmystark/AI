@@ -1,7 +1,9 @@
 # Installing necessary dependencies
 
 pip install transformers datasets torch pandas requests
-pip install PyMuPDF  # For PDF text extraction (optional)
+pip install PyMuPDF 
+pip install fitz
+
 
 
 # Confirm installation 

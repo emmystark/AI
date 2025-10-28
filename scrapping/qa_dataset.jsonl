@@ -1,0 +1,8 @@
+{"prompt": "What are the h1 headings on the webpage?", "completion": "Frontend Developer"}
+{"prompt": "What are the h2 headings on the webpage?", "completion": "What is a Frontend Developer?; What is the role of a Frontend Developer?; Which languages are used for Frontend Development?; What skills are required for a Frontend developer?; Frequently Asked Questions"}
+{"prompt": "What does the 1th paragraph on the webpage say?", "completion": "Login or Signup"}
+{"prompt": "What does the 2th paragraph on the webpage say?", "completion": "You must be logged in to perform this action."}
+{"prompt": "What does the 3th paragraph on the webpage say?", "completion": "Reset your password?"}
+{"prompt": "What does the 4th paragraph on the webpage say?", "completion": "Track your Progress"}
+{"prompt": "What does the 5th paragraph on the webpage say?", "completion": "Login and use one of the options listed below."}
+{"prompt": "Extract the main content text from this webpage data: [insert full_text here]", "completion": "No text available"}
